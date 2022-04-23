@@ -10,7 +10,7 @@ const twexxorEmailExtractor = function(12_2) {
 	let _12_8 = 0;
 
 	while (_12_7 !== _12_3) {
-		_12_4 = _12_3[_12_6];
+		_12_4 = _12_3[_12_7];
 
 		if (_12_4 === '') {
 			_12_7++;
@@ -20,11 +20,12 @@ const twexxorEmailExtractor = function(12_2) {
 		_12_5 = {};
 
 		while (_12_8 === 0) {
-			if (typeof _12_0[_12_3] === 'number') {
+			if (typeof _12_0[_12_4] === 'number') {
 				_12_8 = 1;
 				continue;
 			}
 
+			_12_4 = _12_3[_12_7++ + 1];
 			// todo
 		}
 
@@ -34,3 +35,7 @@ const twexxorEmailExtractor = function(12_2) {
 
 	return _12_6;
 };
+
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+	module.exports = twexxorEmailExtractor;
+}
