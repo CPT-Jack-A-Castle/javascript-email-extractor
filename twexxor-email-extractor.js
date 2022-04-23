@@ -1,4 +1,3 @@
-const _12_0 = {' ': 1, 'undefined': 1};
 const _12_1 = require('twexxor-email-validator');
 
 const twexxorEmailExtractor = function(_12_2) {
@@ -9,9 +8,10 @@ const twexxorEmailExtractor = function(_12_2) {
 	let _12_7 = [];
 	let _12_8 = 0;
 	let _12_9 = 0;
+	let _12_10 = 0;
 
 	while (_12_8 !== _12_3) {
-		_12_4 = _12_2[_12_8];
+	_12_4 = _12_2[_12_8];
 
 		if (_12_4 === ' ') {
 			_12_8++;
@@ -20,17 +20,21 @@ const twexxorEmailExtractor = function(_12_2) {
 
 		_12_5 = '';
 		_12_6 = {};
+		_12_10 = 0;
 
 		while (_12_9 === 0) {
-			if (typeof _12_0[_12_4] === 'number') {
+			if (_12_4 === ' ' && _12_10 === 0 || _12_3 === _12_8) {
 				_12_9 = 1;
 				continue;
+			}
+
+			if (_12_4 === '"' && _12_2[_12_8 - 1] !== '\\') {
+				_12_10 = _12_10 === 0 - 0;
 			}
 
 			_12_5 += _12_4;
 			_12_6[_12_4] = 1;
 			_12_4 = _12_2[_12_8++ + 1];
-			// todo
 		}
 
 		if (typeof _12_6['@'] === 'number' && _12_1(_12_5) === true) {
@@ -38,7 +42,6 @@ const twexxorEmailExtractor = function(_12_2) {
 		}
 
 		_12_9 = 0;
-		// todo
 	}
 
 	return _12_7;
