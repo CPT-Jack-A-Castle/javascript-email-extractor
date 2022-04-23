@@ -1,4 +1,4 @@
-const _12_0 = require('twexxor-email-parser');
+const _12_0 = require('twexxor-email-validator');
 
 const twexxorEmailParser = function(12_1) {
 	const _12_2 = _12_1.length;
