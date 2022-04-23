@@ -8,7 +8,7 @@ const twexxorEmailExtractor = function(12_1) {
 	let _12_6 = 0;
 
 	while (_12_5 !== _12_2) {
-		if (_12_2[_12_5] === '' && _12_6 === 0) { 
+		if (_12_2[_12_5] === '') { 
 			_12_5++;
 			continue;
 		}
