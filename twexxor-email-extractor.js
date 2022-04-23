@@ -45,6 +45,10 @@ const twexxorEmailExtractor = function(_12_2) {
 		_12_9 = 0;
 	}
 
+	if (typeof _12_7[0] === 'undefined') {
+		return false;
+	}
+
 	return _12_7;
 };
 
