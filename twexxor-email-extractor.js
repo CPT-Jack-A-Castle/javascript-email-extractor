@@ -1,4 +1,4 @@
-const _12_0 = {'': 1, 'undefined': 1};
+const _12_0 = {' ': 1, 'undefined': 1};
 const _12_1 = require('twexxor-email-validator');
 
 const twexxorEmailExtractor = function(_12_2) {
@@ -13,7 +13,7 @@ const twexxorEmailExtractor = function(_12_2) {
 	while (_12_8 !== _12_3) {
 		_12_4 = _12_2[_12_8];
 
-		if (_12_4 === '') {
+		if (_12_4 === ' ') {
 			_12_8++;
 			continue;
 		}
