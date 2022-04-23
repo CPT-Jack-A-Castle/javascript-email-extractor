@@ -1,0 +1,12 @@
+{
+	"dependencies": {
+		"twexxor-email-validator": "1.1.3"
+	},
+	"main": "twexxor-email-extractor.js",
+	"name": "twexxor-email-extractor",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/twexxor/javascript-email-extractor.git"
+	},
+	"version": "1.0.0"
+}
