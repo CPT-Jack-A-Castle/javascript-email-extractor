@@ -1,6 +1,6 @@
-const _12_0 = require('twexxor-email-validator');
+const _12_0 = require('twexxor-email-extractor');
 
-const twexxorEmailParser = function(12_1) {
+const twexxorEmailExtractor = function(12_1) {
 	const _12_2 = _12_1.length;
 	let _12_3 = {};
 	let _12_4 = [];
@@ -14,5 +14,5 @@ const twexxorEmailParser = function(12_1) {
 };
 
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-	module.exports = twexxorEmailParser;
+	module.exports = twexxorEmailExtractor;
 }
